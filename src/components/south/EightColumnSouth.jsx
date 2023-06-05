@@ -2,7 +2,7 @@
 import Game from "../Game"
 import { useAppContext } from "@/context/AppContext"
 
-export default function EightColumnLeft() {
+export default function EightColumnSouth() {
   const bracket = useAppContext()
   const column = bracket.south.eightColumn
 

@@ -1,7 +1,7 @@
-import South from "@/components/South"
-import East from "@/components/East"
-import West from "@/components/West"
-import Midwest from "@/components/Midwest"
+import South from "@/components/south/South"
+import East from "@/components/east/East"
+import West from "@/components/west/West"
+import Midwest from "@/components/midwest/Midwest"
 import Final from "@/components/Final"
 
 export default function Home() {
