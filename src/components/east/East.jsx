@@ -1,7 +1,7 @@
 import EightColumnEast from "./EightColumnEast"
 import FourColumnEast from "./FourColumnEast"
 import TwoColumnEast from "./TwoColumnEast"
-import OneColumEast from "./OneColumEast"
+import OneColumEast from "./OneColumnEast"
 
 export default function East() {
   return (
