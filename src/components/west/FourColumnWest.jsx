@@ -5,7 +5,7 @@ import { useAppContext } from "@/context/AppContext"
 
 export default function FourColumnWest() {
   const bracket = useAppContext()
-  const column = bracket.midwest.fourColumn
+  const column = bracket.west.fourColumn
 
   return (
     <div className="mt-[38px] mr-3">

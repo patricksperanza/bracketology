@@ -4,7 +4,7 @@ import { useAppContext } from "@/context/AppContext"
 
 export default function OneColumnWest() {
   const bracket = useAppContext()
-  const game = bracket.midwest.oneColumn[0]
+  const game = bracket.west.oneColumn[0]
 
   return (
     <div className="mt-[266px] mr-[-64px]">

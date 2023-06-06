@@ -5,7 +5,7 @@ import { useAppContext } from "@/context/AppContext"
 
 export default function EightColumnWest() {
   const bracket = useAppContext()
-  const column = bracket.midwest.eightColumn
+  const column = bracket.west.eightColumn
 
   return (
     <div className="flex flex-col gap-3">
