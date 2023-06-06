@@ -2,9 +2,9 @@
 import Game from "../Game"
 import { useAppContext } from "@/context/AppContext"
 
-export default function EightColumnEast() {
+export default function EightColumnsouth() {
   const bracket = useAppContext()
-  const column = bracket.south.eightColumn
+  const column = bracket.east.eightColumn
 
   return (
     <div className="flex flex-col gap-3">
