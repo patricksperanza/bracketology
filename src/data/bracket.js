@@ -162,7 +162,7 @@ export const bracket = {
   midwest: {
     eightColumn: [
       {
-        name1: "Houston.",
+        name1: "Houston",
         slug1: "houston",
         seed1: "1",
         score1: "63",
