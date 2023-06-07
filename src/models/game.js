@@ -1,6 +1,5 @@
 import { Schema, model, models } from "mongoose"
-
-const GameSchema = new Schema({
+GameSchema = new Schema({
   name1: String,
   slug1: String,
   seed1: String,
