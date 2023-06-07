@@ -29,9 +29,6 @@ const BracketSchema = new Schema({
   west: RegionSchema,
 })
 
-const Game = models.Game || model("Game", GameSchema)
-const Region = models.Region || model("Region", RegionSchema)
-const Final = models.Final || model("Final", FinalSchema)
 const Bracket = models.Bracket || model("Bracket", BracketSchema)
 
 export default Bracket
