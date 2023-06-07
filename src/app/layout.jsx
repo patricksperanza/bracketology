@@ -1,5 +1,4 @@
 import "./globals.css"
-import { AppProvider } from "@/context/AppContext"
 
 export const metadata = {
   title: "Delphi Bracketology",
@@ -9,9 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="poppins bg-slate-200">
-        <AppProvider>{children}</AppProvider>
-      </body>
+      <body className="poppins bg-slate-200">{children}</body>
     </html>
   )
 }

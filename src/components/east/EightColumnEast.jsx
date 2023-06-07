@@ -1,11 +1,9 @@
-"use client"
 import Game from "../Game"
-import { useAppContext } from "@/context/AppContext"
+import { getBrackets } from "@/utils/getBrackets"
 
-export default function EightColumnsouth() {
-  const bracket = useAppContext()
-  const column = bracket.east.eightColumn
-
+export default async function EightColumnEast() {
+  const brackets = await getBrackets()
+  const column = brackets[0].east.eightColumn
   return (
     <div className="flex flex-col gap-3">
       {column.map((game) => (

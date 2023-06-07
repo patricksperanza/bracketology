@@ -1,12 +1,12 @@
-"use client"
 import Game from "./Game"
-import { useAppContext } from "@/context/AppContext"
+import { getBrackets } from "@/utils/getBrackets"
 
-export default function Final() {
-  const bracket = useAppContext()
-  const final1 = bracket.final.finalFour[0]
-  const final2 = bracket.final.finalFour[1]
-  const championship = bracket.final.championship[0]
+export default async function Final() {
+  const brackets = await getBrackets()
+  const finalFour = brackets[0].final.finalFour
+  const final1 = finalFour[0]
+  const final2 = finalFour[1]
+  const championship = brackets[0].final.championship[0]
 
   return (
     <div className="mt-[-120px]">

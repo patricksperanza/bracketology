@@ -1,11 +1,9 @@
-"use client"
 import Game from "../Game"
-import { useAppContext } from "@/context/AppContext"
+import { getBrackets } from "@/utils/getBrackets"
 
-export default function OneColumnWest() {
-  const bracket = useAppContext()
-  const game = bracket.west.oneColumn[0]
-
+export default async function OneColumnWest() {
+  const brackets = await getBrackets()
+  const game = brackets[0].west.oneColumn[0]
   return (
     <div className="mt-[266px] mr-[-64px]">
       <Game

@@ -1,10 +1,9 @@
-"use client"
 import Game from "../Game"
-import { useAppContext } from "@/context/AppContext"
+import { getBrackets } from "@/utils/getBrackets"
 
-export default function TwoColumnWest() {
-  const bracket = useAppContext()
-  const column = bracket.west.twoColumn
+export default async function TwoColumnWest() {
+  const brackets = await getBrackets()
+  const column = brackets[0].west.twoColumn
   return (
     <div className="mt-[114px] mr-[-64px]">
       {column.map((game) => (
