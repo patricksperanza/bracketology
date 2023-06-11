@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>penn-state</title>
     <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>penn-st</title>
+    <g id="penn-state" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <desc>Created with Sketch.</desc>
-    <g id="penn-st" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="penn-st_BGL" transform="translate(0.000000, -0.000000)">
-            <g id="penn-st" transform="translate(0.000000, 31.000000)">
+        <g id="penn-state" transform="translate(0.000000, -0.000000)">
+            <g id="penn-state" transform="translate(0.000000, 31.000000)">
                 <g id="g10" transform="translate(99.908673, 68.942467) scale(-1, 1) rotate(-180.000000) translate(-99.908673, -68.942467) translate(0.000000, 0.084021)">
                     <g id="g12">
                         <path d="M178.211868,110.981915 C192.991776,97.4856597 202.828488,80.2345185 198.741548,59.7523273 C193.134242,28.9574787 160.153421,9.33190844 132.352873,3.43778622 C109.113422,-2.26484013 81.8834683,-0.458761632 59.5952497,5.81293136 C37.2116886,12.8949768 11.8821184,27.6745199 2.56749583,51.5788115 C-4.84631951,73.8666648 4.46860263,96.202372 21.8618807,110.981915 C46.0036518,131.226663 75.6105917,138.973513 108.543559,137.309951 C134.443832,135.028672 158.299905,127.805294 178.211868,110.981915" id="path14" fill="#FFFFFF" fill-rule="nonzero"></path>

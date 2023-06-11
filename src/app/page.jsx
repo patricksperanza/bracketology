@@ -1,9 +1,6 @@
-import South from "@/components/south/South"
-import East from "@/components/east/East"
-import West from "@/components/west/West"
-import Midwest from "@/components/midwest/Midwest"
 import PlayIn from "@/components/PlayIn"
 import FirstFourOut from "@/components/FirstFourOut"
+import Column from "@/components/Column"
 
 export default function Home() {
   return (
@@ -14,10 +11,10 @@ export default function Home() {
 
       <div className="mt-7">
         <div className="flex justify-center gap-6">
-          <South />
-          <Midwest />
-          <East />
-          <West />
+          <Column columnTitle="south" />
+          <Column columnTitle="midwest" />
+          <Column columnTitle="east" />
+          <Column columnTitle="west" />
         </div>
         <div className="flex justify-center gap-48 my-7">
           <PlayIn />

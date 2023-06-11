@@ -1,9 +1,18 @@
 import React from "react"
 
-export default function TeamChoice() {
+export default function TeamChoice({ formData, setFormData }) {
+  const handleFormChange = () => {
+    setFormData("test")
+  }
+
   return (
     <div className="table_cell">
-      <input className="w-full" list="team-choice" />
+      <input
+        className="w-full"
+        list="team-choice"
+        value={formData}
+        onChange={handleFormChange}
+      />
       <datalist id="team-choice">
         <option value="Alabama" />
         <option value="FDU" />

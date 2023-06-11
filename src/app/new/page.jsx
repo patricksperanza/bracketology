@@ -1,13 +1,18 @@
+"use client"
+import { useState } from "react"
+import { bracketTemplate } from "@/data/bracket"
+
 import HeaderRow from "@/components/HeaderRow"
 import Row from "@/components/Row"
 import TeamChoice from "@/components/TeamChoice"
 
 export default function New() {
+  const [formData, setFormData] = useState(bracketTemplate)
   return (
     <div className="mt-10 flex gap-20 justify-center">
       <div>
         <HeaderRow />
-        <Row number={1} />
+        <Row number={1} formData={formData} setFormData={setFormData} />
         <Row number={2} />
         <Row number={3} />
         <Row number={4} />

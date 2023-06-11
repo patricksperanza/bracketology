@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>fairleigh-dickinson</title>
+    <title>fdu</title>
     <defs>
         <polygon id="path-1" points="0 0 28.1910886 0 28.1910886 59.5052427 0 59.5052427"></polygon>
     </defs>
-    <g id="fairleigh-dickinson" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="fdu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="FDU-Knights-Word-Mark_Main_NO-DS-copy" transform="translate(0.000000, 12.000000)">
             <polyline id="Fill-1" fill="#232B39" points="59.2552247 15.681551 59.2552247 1.19970247 23.3356528 1.19970247 23.3356528 107.253401 38.9159488 107.253401 38.9159488 59.9428942 56.9657125 59.9428942 56.9657125 45.4576865 38.9159488 45.4576865 38.9159488 15.681551 59.2552247 15.681551"></polyline>
             <path d="M24.5353552,106.053699 L37.7162464,106.053699 L37.7162464,58.7431917 L55.76601,58.7431917 L55.76601,46.657389 L37.7162464,46.657389 L37.7162464,14.4818485 L58.0555222,14.4818485 L58.0555222,2.39940495 L24.5353552,2.39940495 L24.5353552,106.053699 Z M40.1156513,108.453104 L22.1359503,108.453104 L22.1359503,0 L60.4549272,0 L60.4549272,16.8812534 L40.1156513,16.8812534 L40.1156513,44.257984 L58.165415,44.257984 L58.165415,61.1425966 L40.1156513,61.1425966 L40.1156513,108.453104 L40.1156513,108.453104 Z" id="Fill-2" fill="#5F2734"></path>

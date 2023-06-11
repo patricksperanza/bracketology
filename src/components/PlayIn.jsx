@@ -15,6 +15,8 @@ export default async function PlayIn() {
             name2={game.team2.name}
             seed1={game.team1.seed}
             seed2={game.team2.seed}
+            src1={game.team1.name.toLowerCase().split(" ").join("-")}
+            src2={game.team2.name.toLowerCase().split(" ").join("-")}
           />
         ))}
       </div>
