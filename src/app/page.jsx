@@ -2,7 +2,8 @@ import South from "@/components/south/South"
 import East from "@/components/east/East"
 import West from "@/components/west/West"
 import Midwest from "@/components/midwest/Midwest"
-import Final from "@/components/Final"
+import PlayIn from "@/components/PlayIn"
+import FirstFourOut from "@/components/FirstFourOut"
 
 export default function Home() {
   return (
@@ -11,19 +12,16 @@ export default function Home() {
         Men's NCAA Tournament Bracket
       </h1>
 
-      <div className="overflow-auto">
-        <div className="flex justify-between gap-5">
+      <div className="mt-7">
+        <div className="flex justify-center gap-6">
           <South />
           <Midwest />
-        </div>
-
-        <div>
-          <Final />
-        </div>
-
-        <div className="flex justify-between gap-5 mt-10">
           <East />
           <West />
+        </div>
+        <div className="flex justify-center gap-48 my-7">
+          <PlayIn />
+          <FirstFourOut />
         </div>
       </div>
     </div>

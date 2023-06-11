@@ -1,33 +1,26 @@
 import { Schema, model, models } from "mongoose"
 
+const TeamSchema = new Schema({
+  name: String,
+  seed: String,
+})
+
 const GameSchema = new Schema({
-  name1: String,
-  slug1: String,
-  seed1: String,
-  name2: String,
-  slug2: String,
-  seed2: String,
+  team1: TeamSchema,
+  team2: TeamSchema,
 })
 
-const RegionSchema = new Schema({
-  eightColumn: [GameSchema],
-  fourColumn: [GameSchema],
-  twoColumn: [GameSchema],
-  oneColumn: [GameSchema],
-})
-
-const FinalSchema = new Schema({
-  finalFour: [GameSchema],
-  championship: [GameSchema],
-})
-
-const BracketSchema = new Schema({
-  south: RegionSchema,
-  midwest: RegionSchema,
-  final: FinalSchema,
-  east: RegionSchema,
-  west: RegionSchema,
-})
+const BracketSchema = new Schema(
+  {
+    south: [GameSchema],
+    midwest: [GameSchema],
+    east: [GameSchema],
+    west: [GameSchema],
+    playIn: [GameSchema],
+    firstFourOut: [TeamSchema],
+  },
+  { timestamps: true }
+)
 
 const Bracket = models.Bracket || model("Bracket", BracketSchema)
 

@@ -1,6 +1,5 @@
 import Bracket from "@/models/bracket"
 import { connectToDB } from "@/utils/database"
-import { useAppContext } from "@/context/AppContext"
 
 export async function GET(req) {
   try {

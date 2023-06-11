@@ -3,19 +3,16 @@ import { getBrackets } from "@/utils/getBrackets"
 
 export default async function EightColumnSouth() {
   const brackets = await getBrackets()
-  const column = brackets[0].south.eightColumn
+  const column = brackets[0].south
+
   return (
     <div className="flex flex-col gap-3">
       {column.map((game) => (
         <Game
-          name1={game.name1}
-          name2={game.name2}
-          slug1={game.slug1}
-          slug2={game.slug2}
-          score1={game.score1}
-          score2={game.score2}
-          seed1={game.seed1}
-          seed2={game.seed2}
+          name1={game.team1.name}
+          name2={game.team2.name}
+          seed1={game.team1.seed}
+          seed2={game.team2.seed}
         />
       ))}
     </div>

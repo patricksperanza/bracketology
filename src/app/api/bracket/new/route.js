@@ -1,6 +1,10 @@
 import Bracket from "@/models/bracket"
 import { connectToDB } from "@/utils/database"
 
+export async function GET() {
+  return new Response("get received")
+}
+
 export async function POST(req) {
   const bracket = await req.json()
 
