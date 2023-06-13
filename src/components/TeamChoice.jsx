@@ -1,17 +1,20 @@
-import React from "react"
+import { NewBracketContext } from "@/context/NewBracketContext"
+import { useContext } from "react"
 
-export default function TeamChoice({ formData, setFormData }) {
-  const handleFormChange = () => {
-    setFormData("test")
+export default function TeamChoice({ columnTitle, game, team }) {
+  const { newBracket, setNewBracket } = useContext(NewBracketContext)
+
+  const handleChange = (e) => {
+    console.log(e.target.value)
   }
 
   return (
-    <div className="table_cell">
+    <div className="p-1">
       <input
-        className="w-full"
+        className="w-full border"
         list="team-choice"
-        value={formData}
-        onChange={handleFormChange}
+        value={newBracket[columnTitle][game][team].name}
+        onChange={handleChange}
       />
       <datalist id="team-choice">
         <option value="Alabama" />
