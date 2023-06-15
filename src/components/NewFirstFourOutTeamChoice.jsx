@@ -2,13 +2,13 @@ import { NewBracketContext } from "@/context/NewBracketContext"
 import { useContext } from "react"
 import { produce } from "immer"
 
-export default function TeamChoice({ columnTitle, game, team }) {
+export default function NewFirstFourOutTeamChoice({ columnTitle, game }) {
   const { newBracket, setNewBracket } = useContext(NewBracketContext)
 
   const handleChange = (e) => {
     setNewBracket(
       produce((draft) => {
-        draft[columnTitle][game][team].name = e.target.value
+        draft[columnTitle][game].name = e.target.value
       })
     )
   }
@@ -18,7 +18,7 @@ export default function TeamChoice({ columnTitle, game, team }) {
       <input
         className="w-full border"
         list="team-choice"
-        value={newBracket[columnTitle][game][team].name}
+        value={newBracket[columnTitle][game].name}
         onChange={handleChange}
       />
       <datalist id="team-choice">

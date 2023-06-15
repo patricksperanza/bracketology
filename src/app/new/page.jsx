@@ -6,6 +6,7 @@ import { NewBracketContextProvider } from "@/context/NewBracketContext"
 import NewColumn from "@/components/NewColumn"
 import NewPlayIn from "@/components/NewPlayIn"
 import NewFirstFourOut from "@/components/NewFirstFourOut"
+import SubmitButton from "@/components/SubmitButton"
 
 export default function New() {
   return (
@@ -16,7 +17,13 @@ export default function New() {
         <NewColumn columnTitle="east" />
         <NewColumn columnTitle="west" />
       </div>
-      <div className="flex justify-center gap-48 my-7"></div>
+      <div className="flex justify-center gap-48 my-7">
+        <NewPlayIn />
+        <NewFirstFourOut />
+      </div>
+      <div className="flex justify-center gap-48 my-7">
+        <SubmitButton />
+      </div>
     </NewBracketContextProvider>
   )
 }
