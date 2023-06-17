@@ -1,9 +1,9 @@
-import { NewBracketContext } from "@/context/NewBracketContext"
+import { BracketContext } from "@/context/BracketContext"
 import { useContext } from "react"
 import { produce } from "immer"
 
 export default function NewFirstFourOutTeamChoice({ columnTitle, game }) {
-  const { newBracket, setNewBracket } = useContext(NewBracketContext)
+  const { newBracket, setNewBracket } = useContext(BracketContext)
 
   const handleChange = (e) => {
     setNewBracket(

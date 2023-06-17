@@ -1,4 +1,5 @@
 export const bracketTemplate = {
+  creator: "",
   south: [
     {
       team1: {

@@ -12,6 +12,10 @@ const GameSchema = new Schema({
 
 const BracketSchema = new Schema(
   {
+    creator: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
     south: [GameSchema],
     midwest: [GameSchema],
     east: [GameSchema],

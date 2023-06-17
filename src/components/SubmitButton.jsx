@@ -1,11 +1,26 @@
-import { useContext } from "react"
-import { NewBracketContext } from "@/context/NewBracketContext"
+import { useContext, useEffect } from "react"
 import { bracketTemplate } from "@/data/bracket"
 import { useRouter } from "next/navigation"
+import { useSession } from "next-auth/react"
+import { produce } from "immer"
+
+import { BracketContext } from "@/context/BracketContext"
 
 export default function SubmitButton() {
-  const { newBracket, setNewBracket } = useContext(NewBracketContext)
+  const { newBracket, setNewBracket } = useContext(BracketContext)
+  const { data: session } = useSession()
   const router = useRouter()
+
+  useEffect(() => {
+    if (newBracket.creator === "" || newBracket.creator === undefined) {
+      setNewBracket(
+        produce((draft) => {
+          draft.creator = session?.user.id
+        })
+      )
+    }
+  }, [newBracket])
+  console.log(newBracket)
   return (
     <button
       onClick={async () => {
