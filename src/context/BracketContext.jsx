@@ -1,7 +1,6 @@
 "use client"
 import { createContext, useState, useEffect } from "react"
 import { bracketTemplate } from "@/data/bracket"
-import { getBrackets } from "@/utils/getBrackets"
 
 export const BracketContext = createContext()
 

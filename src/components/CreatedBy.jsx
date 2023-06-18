@@ -2,12 +2,10 @@
 import Image from "next/image"
 import { getUser } from "@/utils/getUser"
 import { useEffect, useState } from "react"
-import moment from "moment"
 
 export default function CreatedBy({ currentBracket }) {
   const [creator, setCreator] = useState({})
   let timestamp = new Date(currentBracket.createdAt)
-  console.log(timestamp)
 
   useEffect(() => {
     const getCreator = async () => {
@@ -33,7 +31,7 @@ export default function CreatedBy({ currentBracket }) {
             height={40}
           />
           <div>
-            <h2 className="font-semibold">{creator.username}</h2>
+            <h2 className="font-semibold">{creator.name}</h2>
             <p className="text-xs">{timestamp.toDateString()}</p>
           </div>
         </div>

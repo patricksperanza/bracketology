@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
         <Provider>
           <BracketContextProvider>
             <Nav />
+
             {children}
           </BracketContextProvider>
         </Provider>

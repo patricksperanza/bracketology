@@ -3,7 +3,6 @@ import FirstFourOut from "@/components/FirstFourOut"
 import Column from "@/components/Column"
 import CreatedBy from "@/components/CreatedBy"
 import { getBrackets } from "@/utils/getBrackets"
-import { getUser } from "@/utils/getUser"
 
 export default async function Home() {
   const allBrackets = await getBrackets()
