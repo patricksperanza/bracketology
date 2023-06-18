@@ -3,10 +3,12 @@ import FirstFourOut from "@/components/FirstFourOut"
 import Column from "@/components/Column"
 import CreatedBy from "@/components/CreatedBy"
 import { getBrackets } from "@/utils/getBrackets"
+import { getUser } from "@/utils/getUser"
 
 export default async function Home() {
   const allBrackets = await getBrackets()
-  const currentBracket = allBrackets[0]
+  const currentBracket = await allBrackets[0]
+
   return (
     <div>
       <div className="mt-7">
@@ -16,7 +18,7 @@ export default async function Home() {
           <Column columnTitle="east" currentBracket={currentBracket} />
           <Column columnTitle="west" currentBracket={currentBracket} />
         </div>
-        <div className="flex justify-center gap-24 my-7">
+        <div className="flex justify-center gap-[85px] my-7">
           <PlayIn currentBracket={currentBracket} />
           <FirstFourOut currentBracket={currentBracket} />
           <CreatedBy currentBracket={currentBracket} />

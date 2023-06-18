@@ -1,6 +1,7 @@
 import { BracketContext } from "@/context/BracketContext"
 import { useContext } from "react"
 import { produce } from "immer"
+import { teams } from "@/data/teams"
 
 export default function TeamChoice({ columnTitle, game, team }) {
   const { newBracket, setNewBracket } = useContext(BracketContext)
@@ -22,22 +23,9 @@ export default function TeamChoice({ columnTitle, game, team }) {
         onChange={handleChange}
       />
       <datalist id="team-choice">
-        <option value="Alabama" />
-        <option value="FDU" />
-        <option value="Michigan State" />
-        <option value="Boise State" />
-        <option value="Miami Fla" />
-        <option value="Indiana" />
-        <option value="Iona" />
-        <option value="Kentucky" />
-        <option value="Rutgers" />
-        <option value="UConn" />
-        <option value="Vermont" />
-        <option value="Missouri" />
-        <option value="Missouri" />
-        <option value="USC" />
-        <option value="Texas" />
-        <option value="Princeton" />
+        {teams.map((team) => (
+          <option key={team} value={team} />
+        ))}
       </datalist>
     </div>
   )
