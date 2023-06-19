@@ -1,12 +1,13 @@
 "use client"
 
 import { getAllUsers } from "@/utils/getAllUsers"
-import { useEffect, useState } from "react"
-import { getBrackets } from "@/utils/getBrackets"
+import { useEffect, useState, useContext } from "react"
+import { BracketContext } from "@/context/BracketContext"
 
-export default function BracketDropDown({ displayDropdown }) {
+export default function BracketDropDown({ displayBracketDropdown }) {
   const [usersList, setUsersList] = useState([])
-  const [bracketsList, setBracketsList] = useState([])
+  const { allBrackets, currentBracketId, setCurrentBracketId } =
+    useContext(BracketContext)
 
   useEffect(() => {
     const getUsersList = async () => {
@@ -17,34 +18,30 @@ export default function BracketDropDown({ displayDropdown }) {
     getUsersList()
   }, [])
 
-  useEffect(() => {
-    const getBracketsList = async () => {
-      const list = await getBrackets()
-      setBracketsList(list)
-    }
+  const selectBracket = (bracketId) => {
+    setCurrentBracketId(bracketId)
+  }
 
-    getBracketsList()
-  }, [])
-
-  console.log(bracketsList)
   return (
     <>
-      {usersList.length > 0 && displayDropdown && (
-        <div className="absolute top-8">
+      {usersList.length > 0 && displayBracketDropdown && (
+        <div className="absolute top-8 z-50">
           {usersList.map((user) => (
-            <li
+            <div
               key={user.name}
-              className="list-none text-xs font-semibold bg-slate-100 text-black pr-4 py-2"
+              className="text-xs font-semibold bg-slate-100 text-black py-2"
             >
               <h2>{user.name}</h2>
-              <ul>
-                {bracketsList.map((bracket, i) => (
-                  <li key={i} className="pl-4 font-normal">
-                    {new Date(bracket.createdAt).toDateString()}
-                  </li>
-                ))}{" "}
-              </ul>
-            </li>
+              {allBrackets.map((bracket, i) => (
+                <p
+                  key={i}
+                  className="px-4 py-2 font-normal border-b"
+                  onClick={() => selectBracket(bracket._id)}
+                >
+                  {new Date(bracket.createdAt).toDateString()}
+                </p>
+              ))}{" "}
+            </div>
           ))}
         </div>
       )}

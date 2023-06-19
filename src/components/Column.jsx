@@ -1,10 +1,23 @@
 "use client"
 import Game from "./Game"
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
 import { BracketContext } from "@/context/BracketContext"
+import { starter } from "@/data/starter"
 
 export default function Column({ columnTitle, currentBracket }) {
-  const column = currentBracket[columnTitle]
+  const { allBrackets, currentBracketId } = useContext(BracketContext)
+  const [current, setCurrent] = useState(starter)
+
+  useEffect(() => {
+    const curBrack = allBrackets.find((el) => el._id === currentBracketId)
+
+    // Check to see if current brack exists before setting it
+    if (curBrack !== undefined) {
+      setCurrent(curBrack)
+    }
+  }, [currentBracketId])
+
+  const column = current[columnTitle]
 
   return (
     <div className="flex flex-col gap-3">

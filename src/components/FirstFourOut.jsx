@@ -1,10 +1,23 @@
 "use client"
 import Team from "./Team"
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
 import { BracketContext } from "@/context/BracketContext"
+import { starter } from "@/data/starter"
 
 export default function FirstFourOut({ currentBracket }) {
-  const column = currentBracket.firstFourOut
+  const { allBrackets, currentBracketId } = useContext(BracketContext)
+  const [current, setCurrent] = useState(starter)
+
+  useEffect(() => {
+    const curBrack = allBrackets.find((el) => el._id === currentBracketId)
+
+    // Check to see if current bracket exists before setting it
+    if (curBrack !== undefined) {
+      setCurrent(curBrack)
+    }
+  }, [currentBracketId])
+
+  const column = current.firstFourOut
 
   return (
     <div>

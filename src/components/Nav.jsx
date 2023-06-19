@@ -3,11 +3,13 @@ import { signIn, signOut, useSession } from "next-auth/react"
 import Image from "next/image"
 import Link from "next/link"
 import BracketDropDown from "./BracketDropDown"
+import UserDropDown from "./UserDropDown"
 import { useState } from "react"
 
 export default function Nav() {
   const { data: session } = useSession()
-  const [displayDropdown, setDisplayDropdown] = useState(false)
+  const [displayBracketDropdown, setDisplayBracketDropdown] = useState(false)
+  const [displayUserDropdown, setDisplayUserDropdown] = useState(false)
 
   return (
     <nav>
@@ -31,8 +33,9 @@ export default function Nav() {
               alt="user image"
               width={30}
               height={30}
-              onClick={signOut}
+              onClick={() => setDisplayUserDropdown((prev) => !prev)}
             />
+            <UserDropDown displayUserDropdown={displayUserDropdown} />
           </div>
         ) : (
           <div className="w-[60px]">
@@ -49,8 +52,10 @@ export default function Nav() {
       <div className="bg-slate-700">
         <ul className="flex justify-center text-slate-50 text-center relative w-[700px mx-auto">
           <li className="hover:text-sky-300 cursor-pointer border-r border-slate-200 px-14 py-1 text-center">
-            <p onClick={() => setDisplayDropdown((prev) => !prev)}>Brackets</p>
-            <BracketDropDown displayDropdown={displayDropdown} />
+            <p onClick={() => setDisplayBracketDropdown((prev) => !prev)}>
+              Brackets
+            </p>
+            <BracketDropDown displayBracketDropdown={displayBracketDropdown} />
           </li>
           <li className="hover:text-sky-300 cursor-pointer border-r border-slate-200 px-14 py-1 text-center">
             News
@@ -61,7 +66,7 @@ export default function Nav() {
           <li className="hover:text-sky-300 cursor-pointer border-r border-slate-200 px-14 py-1 text-center">
             Links
           </li>
-          <li className="hover:text-sky-300 cursor-pointer px-14 py-1 text-center">
+          <li className="hover:text-sky-300 cursor-pointer px-14 py-1 text-center border-r border-slate-200">
             Support
           </li>
         </ul>
