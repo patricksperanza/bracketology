@@ -24,7 +24,7 @@ export default function Nav() {
             />
           </Link>
         </div>
-        <h1>Delphi Bracketology</h1>
+        <h1>Bracketology</h1>
         {session ? (
           <div className="flex gap-4 justify-center items-center w-[50px] font-semibold pointer">
             <Image
@@ -51,23 +51,20 @@ export default function Nav() {
 
       <div className="bg-slate-700">
         <ul className="flex justify-center text-slate-50 text-center relative w-[700px mx-auto">
-          <li className="hover:text-sky-300 cursor-pointer border-r border-slate-200 px-14 py-1 text-center">
+          <li className="hover:text-sky-300 cursor-pointer border-r border-l border-slate-200 px-14 py-1 text-center">
             <p onClick={() => setDisplayBracketDropdown((prev) => !prev)}>
               Brackets
             </p>
             <BracketDropDown displayBracketDropdown={displayBracketDropdown} />
           </li>
           <li className="hover:text-sky-300 cursor-pointer border-r border-slate-200 px-14 py-1 text-center">
-            News
+            Seed Lists
+          </li>
+          <li className="hover:text-sky-300 cursor-pointer border-r border-slate-200 px-14 py-1 text-center">
+            Standings
           </li>
           <li className="hover:text-sky-300 cursor-pointer border-r border-slate-200 px-14 py-1 text-center">
             Podcast
-          </li>
-          <li className="hover:text-sky-300 cursor-pointer border-r border-slate-200 px-14 py-1 text-center">
-            Links
-          </li>
-          <li className="hover:text-sky-300 cursor-pointer px-14 py-1 text-center border-r border-slate-200">
-            Support
           </li>
         </ul>
       </div>
