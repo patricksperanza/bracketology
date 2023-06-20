@@ -16,3 +16,11 @@
   font-weight: 200;
 }
 
+.table_cell {
+  border: 1px solid gray;
+  border-radius: 2px;
+  width: 140px;
+  padding: 10px;
+  text-align: center;
+  background: rgb(223, 235, 239);
+}

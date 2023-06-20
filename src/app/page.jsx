@@ -1,29 +1,26 @@
-import South from "@/components/south/South"
-import East from "@/components/east/East"
-import West from "@/components/west/West"
-import Midwest from "@/components/midwest/Midwest"
-import Final from "@/components/Final"
+import PlayIn from "@/components/PlayIn"
+import FirstFourOut from "@/components/FirstFourOut"
+import Column from "@/components/Column"
+import CreatedBy from "@/components/CreatedBy"
+import { getBrackets } from "@/utils/getBrackets"
 
-export default function Home() {
+export default async function Home() {
+  const allBrackets = await getBrackets()
+  const currentBracket = await allBrackets[0]
+
   return (
     <div>
-      <h1 className="text-2xl text-center font-semibold py-4  rounded bg-slate-50 drop-shadow">
-        Men's NCAA Tournament Bracket
-      </h1>
-
-      <div className="overflow-auto">
-        <div className="flex justify-between gap-5">
-          <South />
-          <Midwest />
+      <div className="mt-7">
+        <div className="flex justify-center gap-6">
+          <Column columnTitle="south" currentBracket={currentBracket} />
+          <Column columnTitle="midwest" currentBracket={currentBracket} />
+          <Column columnTitle="east" currentBracket={currentBracket} />
+          <Column columnTitle="west" currentBracket={currentBracket} />
         </div>
-
-        <div>
-          <Final />
-        </div>
-
-        <div className="flex justify-between gap-5 mt-10">
-          <East />
-          <West />
+        <div className="flex justify-center gap-[85px] my-7">
+          <PlayIn currentBracket={currentBracket} />
+          <FirstFourOut currentBracket={currentBracket} />
+          <CreatedBy currentBracket={currentBracket} />
         </div>
       </div>
     </div>

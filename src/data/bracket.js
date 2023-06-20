@@ -1,678 +1,782 @@
-export const bracket = {
-  south: {
-    eightColumn: [
-      {
-        name1: "Alabama",
-        slug1: "alabama",
-        seed1: "1",
-        score1: "96",
-        name2: "Texas A&M-CC",
-        slug2: "texas-a&m-cc",
-        seed2: "16",
-        score2: "75",
+export const bracketTemplate = {
+  creator: "",
+  south: [
+    {
+      team1: {
+        name: "",
+        seed: "1",
       },
-      {
-        name1: "Maryland",
-        slug1: "maryland",
-        seed1: "8",
-        score1: "67",
-        name2: "West Virginia",
-        slug2: "west-virginia",
-        seed2: "9",
-        score2: "65",
+      team2: {
+        name: "",
+        seed: "16",
       },
-      {
-        name1: "San Diego St.",
-        slug1: "san-diego-st",
-        seed1: "5",
-        score1: "63",
-        name2: "Col of Charleston",
-        slug2: "col-of-charleston",
-        seed2: "12",
-        score2: "57",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "8",
       },
-      {
-        name1: "Virginia",
-        slug1: "virginia",
-        seed1: "4",
-        score1: "67",
-        name2: "Furman",
-        slug2: "furman",
-        seed2: "13",
-        score2: "68",
+      team2: {
+        name: "",
+        seed: "9",
       },
-      {
-        name1: "Creighton",
-        slug1: "creighton",
-        seed1: "6",
-        score1: "72",
-        name2: "NC State",
-        slug2: "nc-state",
-        seed2: "11",
-        score2: "63",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "5",
       },
-      {
-        name1: "Baylor",
-        slug1: "baylor",
-        seed1: "3",
-        score1: "74",
-        name2: "UCSB",
-        slug2: "ucsb",
-        seed2: "14",
-        score2: "56",
+      team2: {
+        name: "",
+        seed: "12",
       },
-      {
-        name1: "Missouri",
-        slug1: "missouri",
-        seed1: "7",
-        score1: "76",
-        name2: "Utah St.",
-        slug2: "utah-st",
-        seed2: "10",
-        score2: "65",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "4",
       },
-      {
-        name1: "Arizona",
-        slug1: "arizona",
-        seed1: "2",
-        score1: "55",
-        name2: "Princeton",
-        slug2: "princeton",
-        seed2: "15",
-        score2: "59",
+      team2: {
+        name: "",
+        seed: "13",
       },
-    ],
-    fourColumn: [
-      {
-        name1: "Alabama",
-        slug1: "alabama",
-        seed1: "1",
-        score1: "73",
-        name2: "Maryland",
-        slug2: "maryland",
-        seed2: "8",
-        score2: "51",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "6",
       },
-      {
-        name1: "San Diego St.",
-        slug1: "san-diego-st",
-        seed1: "5",
-        score1: "75",
-        name2: "Furman",
-        slug2: "furman",
-        seed2: "13",
-        score2: "52",
+      team2: {
+        name: "",
+        seed: "11",
       },
-      {
-        name1: "Creighton",
-        slug1: "creighton",
-        seed1: "6",
-        score1: "85",
-        name2: "Baylor",
-        slug2: "baylor",
-        seed2: "3",
-        score2: "76",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "3",
       },
-      {
-        name1: "Missouri",
-        slug1: "missouri",
-        seed1: "7",
-        score1: "63",
-        name2: "Princeton",
-        slug2: "princeton",
-        seed2: "15",
-        score2: "78",
+      team2: {
+        name: "",
+        seed: "14",
       },
-    ],
-    twoColumn: [
-      {
-        name1: "Alabama",
-        slug1: "alabama",
-        seed1: "1",
-        score1: "64",
-        name2: "San Diego St.",
-        slug2: "san-diego-st",
-        seed2: "5",
-        score2: "71",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "7",
       },
-      {
-        name1: "San Diego St.",
-        slug1: "san-diego-st",
-        seed1: "5",
-        score1: "57",
-        name2: "Princeton",
-        slug2: "princeton",
-        seed2: "15",
-        score2: "75",
+      team2: {
+        name: "",
+        seed: "10",
       },
-    ],
-    oneColumn: [
-      {
-        name1: "San Diego St.",
-        slug1: "san-diego-st",
-        seed1: "5",
-        score1: "57",
-        name2: "Creighton",
-        slug2: "creighton",
-        seed2: "6",
-        score2: "56",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "2",
       },
-    ],
-  },
-  midwest: {
-    eightColumn: [
-      {
-        name1: "Houston",
-        slug1: "houston",
-        seed1: "1",
-        score1: "63",
-        name2: "N Kentucky",
-        slug2: "northern-ky",
-        seed2: "16",
-        score2: "52",
+      team2: {
+        name: "",
+        seed: "15",
       },
-      {
-        name1: "Iowa",
-        slug1: "iowa",
-        seed1: "8",
-        score1: "75",
-        name2: "Auburn",
-        slug2: "auburn",
-        seed2: "9",
-        score2: "83",
+    },
+  ],
+  midwest: [
+    {
+      team1: {
+        name: "",
+        seed: "1",
       },
-      {
-        name1: "Miami (FL)",
-        slug1: "miami-fl",
-        seed1: "5",
-        score1: "63",
-        name2: "Drake",
-        slug2: "drake",
-        seed2: "12",
-        score2: "56",
+      team2: {
+        name: "",
+        seed: "16",
       },
-      {
-        name1: "Indiana",
-        slug1: "indiana",
-        seed1: "4",
-        score1: "71",
-        name2: "Kent St.",
-        slug2: "kent-st",
-        seed2: "13",
-        score2: "60",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "8",
       },
-      {
-        name1: "Iowa St.",
-        slug1: "iowa-st",
-        seed1: "6",
-        score1: "41",
-        name2: "Pitt",
-        slug2: "pittsburgh",
-        seed2: "11",
-        score2: "59",
+      team2: {
+        name: "",
+        seed: "9",
       },
-      {
-        name1: "Xavier",
-        slug1: "xavier",
-        seed1: "3",
-        score1: "72",
-        name2: "Kennesaw St.",
-        slug2: "kennesaw-st",
-        seed2: "14",
-        score2: "67",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "5",
       },
-      {
-        name1: "Texas A&M",
-        slug1: "texas-a&m",
-        seed1: "7",
-        score1: "59",
-        name2: "Penn St.",
-        slug2: "penn-st",
-        seed2: "10",
-        score2: "76",
+      team2: {
+        name: "",
+        seed: "12",
       },
-      {
-        name1: "Texas",
-        slug1: "texas",
-        seed1: "2",
-        score1: "81",
-        name2: "Colgate",
-        slug2: "colgate",
-        seed2: "15",
-        score2: "61",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "4",
       },
-    ],
-    fourColumn: [
-      {
-        name1: "Houston.",
-        slug1: "houston",
-        seed1: "1",
-        score1: "81",
-        name2: "Auburn",
-        slug2: "auburn",
-        seed2: "9",
-        score2: "64",
+      team2: {
+        name: "",
+        seed: "13",
       },
-      {
-        name1: "Miami (FL)",
-        slug1: "miami-fl",
-        seed1: "5",
-        score1: "85",
-        name2: "Indiana",
-        slug2: "indiana",
-        seed2: "4",
-        score2: "69",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "6",
       },
-      {
-        name1: "Pitt",
-        slug1: "pittsburgh",
-        seed1: "11",
-        score1: "73",
-        name2: "Xavier",
-        slug2: "xavier",
-        seed2: "3",
-        score2: "84",
+      team2: {
+        name: "",
+        seed: "11",
       },
-      {
-        name1: "Penn St.",
-        slug1: "penn-st",
-        seed1: "10",
-        score1: "66",
-        name2: "Texas",
-        slug2: "texas",
-        seed2: "2",
-        score2: "71",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "3",
       },
-    ],
-    twoColumn: [
-      {
-        name1: "Houston.",
-        slug1: "houston",
-        seed1: "1",
-        score1: "75",
-        name2: "Miami (FL)",
-        slug2: "miami-fl",
-        seed2: "5",
-        score2: "89",
+      team2: {
+        name: "",
+        seed: "14",
       },
-      {
-        name1: "Xavier",
-        slug1: "xavier",
-        seed1: "3",
-        score1: "71",
-        name2: "Texas",
-        slug2: "texas",
-        seed2: "2",
-        score2: "73",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "7",
       },
-    ],
-    oneColumn: [
-      {
-        name1: "Miami (FL)",
-        slug1: "miami-fl",
-        seed1: "5",
-        score1: "89",
-        name2: "Texas",
-        slug2: "texas",
-        seed2: "2",
-        score2: "73",
+      team2: {
+        name: "",
+        seed: "10",
       },
-    ],
-  },
-  final: {
-    finalFour: [
-      {
-        name1: "San Diego St.",
-        slug1: "san-diego-st",
-        seed1: "5",
-        score1: "72",
-        name2: "FAU",
-        slug2: "fla-atlantic",
-        seed2: "9",
-        score2: "71",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "2",
       },
-      {
-        name1: "Miami (FL)",
-        slug1: "miami-fl",
-        seed1: "5",
-        score1: "59",
-        name2: "UConn",
-        slug2: "uconn",
-        seed2: "4",
-        score2: "72",
+      team2: {
+        name: "",
+        seed: "15",
       },
-    ],
-    championship: [
-      {
-        name1: "San Diego St.",
-        slug1: "san-diego-st",
-        seed1: "5",
-        score1: "59",
-        name2: "UConn",
-        slug2: "uconn",
-        seed2: "4",
-        score2: "76",
+    },
+  ],
+  east: [
+    {
+      team1: {
+        name: "",
+        seed: "1",
       },
-    ],
-  },
-  east: {
-    eightColumn: [
-      {
-        name1: "Purdue",
-        slug1: "purdue",
-        seed1: "1",
-        score1: "58",
-        name2: "FDU",
-        slug2: "fairleigh-dickinson",
-        seed2: "16",
-        score2: "63",
+      team2: {
+        name: "",
+        seed: "16",
       },
-      {
-        name1: "Memphis",
-        slug1: "memphis",
-        seed1: "8",
-        score1: "65",
-        name2: "FAU",
-        slug2: "fla-atlantic",
-        seed2: "9",
-        score2: "66",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "8",
       },
-      {
-        name1: "Duke",
-        slug1: "duke",
-        seed1: "5",
-        score1: "74",
-        name2: "Oral Roberts",
-        slug2: "oral-roberts",
-        seed2: "12",
-        score2: "51",
+      team2: {
+        name: "",
+        seed: "9",
       },
-      {
-        name1: "Tennessee",
-        slug1: "tennessee",
-        seed1: "4",
-        score1: "58",
-        name2: "Louisiana",
-        slug2: "la-lafayette",
-        seed2: "13",
-        score2: "55",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "5",
       },
-      {
-        name1: "Kentucky",
-        slug1: "kentucky",
-        seed1: "6",
-        score1: "61",
-        name2: "Providence",
-        slug2: "providence",
-        seed2: "11",
-        score2: "53",
+      team2: {
+        name: "",
+        seed: "12",
       },
-      {
-        name1: "Kansas St.",
-        slug1: "kansas-st",
-        seed1: "3",
-        score1: "77",
-        name2: "Montana St.",
-        slug2: "montana-st",
-        seed2: "14",
-        score2: "65",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "4",
       },
-      {
-        name1: "Michigan St.",
-        slug1: "michigan-st",
-        seed1: "7",
-        score1: "72",
-        name2: "USC",
-        slug2: "southern-california",
-        seed2: "10",
-        score2: "62",
+      team2: {
+        name: "",
+        seed: "13",
       },
-      {
-        name1: "Marquette",
-        slug1: "marquette",
-        seed1: "2",
-        score1: "78",
-        name2: "Vermont",
-        slug2: "vermont",
-        seed2: "15",
-        score2: "61",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "6",
       },
-    ],
-    fourColumn: [
-      {
-        name1: "FDU",
-        slug1: "fairleigh-dickinson",
-        seed1: "16",
-        score1: "70",
-        name2: "FAU",
-        slug2: "fla-atlantic",
-        seed2: "9",
-        score2: "78",
+      team2: {
+        name: "",
+        seed: "11",
       },
-      {
-        name1: "Duke",
-        slug1: "duke",
-        seed1: "5",
-        score1: "52",
-        name2: "Tennessee",
-        slug2: "tennessee",
-        seed2: "4",
-        score2: "65",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "3",
       },
-      {
-        name1: "Kentucky",
-        slug1: "kentucky",
-        seed1: "6",
-        score1: "69",
-        name2: "Kansas St.",
-        slug2: "kansas-st",
-        seed2: "3",
-        score2: "75",
+      team2: {
+        name: "",
+        seed: "14",
       },
-      {
-        name1: "Michigan St.",
-        slug1: "michigan-st",
-        seed1: "7",
-        score1: "69",
-        name2: "Marquette",
-        slug2: "marquette",
-        seed2: "2",
-        score2: "60",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "7",
       },
-    ],
-    twoColumn: [
-      {
-        name1: "FAU",
-        slug1: "fla-atlantic",
-        seed1: "9",
-        score1: "62",
-        name2: "Tennessee",
-        slug2: "tennessee",
-        seed2: "4",
-        score2: "55",
+      team2: {
+        name: "",
+        seed: "10",
       },
-      {
-        name1: "Kansas St.",
-        slug1: "kansas-st",
-        seed1: "3",
-        score1: "98",
-        name2: "Michigan St.",
-        slug2: "michigan-st",
-        seed2: "7",
-        score2: "93",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "2",
       },
-    ],
-    oneColumn: [
-      {
-        name1: "FAU",
-        slug1: "fla-atlantic",
-        seed1: "9",
-        score1: "79",
-        name2: "Kansas St.",
-        slug2: "kansas-st",
-        seed2: "3",
-        score2: "76",
+      team2: {
+        name: "",
+        seed: "15",
       },
-    ],
-  },
-  west: {
-    eightColumn: [
-      {
-        name1: "Kansas",
-        slug1: "kansas",
-        seed1: "1",
-        score1: "96",
-        name2: "Howard",
-        slug2: "howard",
-        seed2: "16",
-        score2: "68",
+    },
+  ],
+  west: [
+    {
+      team1: {
+        name: "",
+        seed: "1",
       },
-      {
-        name1: "Arkansas",
-        slug1: "arkansas",
-        seed1: "8",
-        score1: "73",
-        name2: "Illinois",
-        slug2: "illinois",
-        seed2: "9",
-        score2: "63",
+      team2: {
+        name: "",
+        seed: "16",
       },
-      {
-        name1: "Saint Mary's",
-        slug1: "st-marys-ca",
-        seed1: "5",
-        score1: "63",
-        name2: "VCU",
-        slug2: "vcu",
-        seed2: "12",
-        score2: "51",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "8",
       },
-      {
-        name1: "UConn",
-        slug1: "uconn",
-        seed1: "4",
-        score1: "87",
-        name2: "Iona",
-        slug2: "iona",
-        seed2: "13",
-        score2: "63",
+      team2: {
+        name: "",
+        seed: "9",
       },
-      {
-        name1: "TCU",
-        slug1: "tcu",
-        seed1: "6",
-        score1: "72",
-        name2: "Arizona St.",
-        slug2: "arizona-st",
-        seed2: "11",
-        score2: "70",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "5",
       },
-      {
-        name1: "Gonzaga",
-        slug1: "gonzaga",
-        seed1: "3",
-        score1: "82",
-        name2: "Grand Canyon",
-        slug2: "grand-canyon",
-        seed2: "14",
-        score2: "70",
+      team2: {
+        name: "",
+        seed: "12",
       },
-      {
-        name1: "Northwestern",
-        slug1: "northwestern",
-        seed1: "7",
-        score1: "75",
-        name2: "Boise St.",
-        slug2: "boise-st",
-        seed2: "10",
-        score2: "67",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "4",
       },
-      {
-        name1: "UCLA",
-        slug1: "ucla",
-        seed1: "2",
-        score1: "86",
-        name2: "UNC Asheville",
-        slug2: "unc-asheville",
-        seed2: "15",
-        score2: "53",
+      team2: {
+        name: "",
+        seed: "13",
       },
-    ],
-    fourColumn: [
-      {
-        name1: "Kansas",
-        slug1: "Kansas",
-        seed1: "1",
-        score1: "71",
-        name2: "Arkansas",
-        slug2: "arkansas",
-        seed2: "8",
-        score2: "72",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "6",
       },
-      {
-        name1: "Saint Mary's",
-        slug1: "st-marys-ca",
-        seed1: "5",
-        score1: "55",
-        name2: "UConn",
-        slug2: "uconn",
-        seed2: "4",
-        score2: "70",
+      team2: {
+        name: "",
+        seed: "11",
       },
-      {
-        name1: "TCU",
-        slug1: "tcu",
-        seed1: "6",
-        score1: "81",
-        name2: "Gonzaga",
-        slug2: "gonzaga",
-        seed2: "3",
-        score2: "84",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "3",
       },
-      {
-        name1: "Northwestern",
-        slug1: "northwestern",
-        seed1: "7",
-        score1: "63",
-        name2: "UCLA",
-        slug2: "ucla",
-        seed2: "2",
-        score2: "68",
+      team2: {
+        name: "",
+        seed: "14",
       },
-    ],
-    twoColumn: [
-      {
-        name1: "Arkansas",
-        slug1: "arkansas",
-        seed1: "8",
-        score1: "65",
-        name2: "UConn",
-        slug2: "uconn",
-        seed2: "4",
-        score2: "88",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "7",
       },
-      {
-        name1: "Gonzaga",
-        slug1: "gonzaga",
-        seed1: "3",
-        score1: "79",
-        name2: "UCLA",
-        slug2: "ucla",
-        seed2: "2",
-        score2: "76",
+      team2: {
+        name: "",
+        seed: "10",
       },
-    ],
-    oneColumn: [
-      {
-        name1: "UConn",
-        slug1: "uconn",
-        seed1: "4",
-        score1: "82",
-        name2: "Gonzaga",
-        slug2: "gonzaga",
-        seed2: "3",
-        score2: "54",
+    },
+    {
+      team1: {
+        name: "",
+        seed: "2",
       },
-    ],
-  },
+      team2: {
+        name: "",
+        seed: "15",
+      },
+    },
+  ],
+  playIn: [
+    {
+      team1: {
+        name: "",
+        seed: "",
+      },
+      team2: {
+        name: "",
+        seed: "",
+      },
+    },
+    {
+      team1: {
+        name: "",
+        seed: "",
+      },
+      team2: {
+        name: "",
+        seed: "",
+      },
+    },
+    {
+      team1: {
+        name: "",
+        seed: "",
+      },
+      team2: {
+        name: "",
+        seed: "",
+      },
+    },
+    {
+      team1: {
+        name: "",
+        seed: "",
+      },
+      team2: {
+        name: "",
+        seed: "",
+      },
+    },
+  ],
+  firstFourOut: [
+    {
+      name: "",
+      seed: "",
+    },
+    {
+      name: "",
+      seed: "",
+    },
+    {
+      name: "",
+      seed: "",
+    },
+    {
+      name: "",
+      seed: "",
+    },
+  ],
+}
+
+const sampleUserBracket = {
+  south: [
+    {
+      team1: {
+        name: "Alabama",
+        seed: "1",
+      },
+      team2: {
+        name: "FDU",
+        seed: "16",
+      },
+    },
+    {
+      team1: {
+        name: "Michigan State",
+        seed: "8",
+      },
+      team2: {
+        name: "Boise State",
+        seed: "9",
+      },
+    },
+    {
+      team1: {
+        name: "Miami Fla",
+        seed: "5",
+      },
+      team2: {
+        name: "Drake",
+        seed: "12",
+      },
+    },
+    {
+      team1: {
+        name: "Indiana",
+        seed: "4",
+      },
+      team2: {
+        name: "Iona",
+        seed: "13",
+      },
+    },
+    {
+      team1: {
+        name: "Kentucky",
+        seed: "6",
+      },
+      team2: {
+        name: "Rutgers",
+        seed: "11",
+      },
+    },
+    {
+      team1: {
+        name: "UConn",
+        seed: "3",
+      },
+      team2: {
+        name: "Vermont",
+        seed: "14",
+      },
+    },
+    {
+      team1: {
+        name: "Missouri",
+        seed: "7",
+      },
+      team2: {
+        name: "USC",
+        seed: "10",
+      },
+    },
+    {
+      team1: {
+        name: "Texas",
+        seed: "2",
+      },
+      team2: {
+        name: "Princeton",
+        seed: "15",
+      },
+    },
+  ],
+  midwest: [
+    {
+      team1: {
+        name: "Kansas",
+        seed: "1",
+      },
+      team2: {
+        name: "Northern Kentucky",
+        seed: "16",
+      },
+    },
+    {
+      team1: {
+        name: "Arkansas",
+        seed: "8",
+      },
+      team2: {
+        name: "Maryland",
+        seed: "9",
+      },
+    },
+    {
+      team1: {
+        name: "Duke",
+        seed: "5",
+      },
+      team2: {
+        name: "VCU",
+        seed: "12",
+      },
+    },
+    {
+      team1: {
+        name: "Tennessee",
+        seed: "4",
+      },
+      team2: {
+        name: "Louisiana",
+        seed: "13",
+      },
+    },
+    {
+      team1: {
+        name: "TCU",
+        seed: "6",
+      },
+      team2: {
+        name: "Mississiippi St",
+        seed: "11",
+      },
+    },
+    {
+      team1: {
+        name: "Marquette",
+        seed: "3",
+      },
+      team2: {
+        name: "Kennesaw State",
+        seed: "14",
+      },
+    },
+    {
+      team1: {
+        name: "FAU",
+        seed: "7",
+      },
+      team2: {
+        name: "Illinois",
+        seed: "10",
+      },
+    },
+    {
+      team1: {
+        name: "Arizona",
+        seed: "2",
+      },
+      team2: {
+        name: "UNC Asheville",
+        seed: "15",
+      },
+    },
+  ],
+  west: [
+    {
+      team1: {
+        name: "Houston",
+        seed: "1",
+      },
+      team2: {
+        name: "Texas A&M CC",
+        seed: "16",
+      },
+    },
+    {
+      team1: {
+        name: "West Virgina",
+        seed: "8",
+      },
+      team2: {
+        name: "Penn State",
+        seed: "9",
+      },
+    },
+    {
+      team1: {
+        name: "San Diego State",
+        seed: "5",
+      },
+      team2: {
+        name: "Oral Roberts",
+        seed: "12",
+      },
+    },
+    {
+      team1: {
+        name: "Xavier",
+        seed: "4",
+      },
+      team2: {
+        name: "Kent State",
+        seed: "13",
+      },
+    },
+    {
+      team1: {
+        name: "St. Mary's",
+        seed: "6",
+      },
+      team2: {
+        name: "Pittsburgh",
+        seed: "11",
+      },
+    },
+    {
+      team1: {
+        name: "Baylor",
+        seed: "3",
+      },
+      team2: {
+        name: "Grand Canyon",
+        seed: "14",
+      },
+    },
+    {
+      team1: {
+        name: "Northwestern",
+        seed: "7",
+      },
+      team2: {
+        name: "Utah State",
+        seed: "10",
+      },
+    },
+    {
+      team1: {
+        name: "UCLA",
+        seed: "2",
+      },
+      team2: {
+        name: "Montana St",
+        seed: "15",
+      },
+    },
+  ],
+  east: [
+    {
+      team1: {
+        name: "Purdue",
+        seed: "1",
+      },
+      team2: {
+        name: "Howard",
+        seed: "16",
+      },
+    },
+    {
+      team1: {
+        name: "Memphis",
+        seed: "8",
+      },
+      team2: {
+        name: "Iowa",
+        seed: "9",
+      },
+    },
+    {
+      team1: {
+        name: "Iowa State",
+        seed: "5",
+      },
+      team2: {
+        name: "Charleston",
+        seed: "12",
+      },
+    },
+    {
+      team1: {
+        name: "Virginia",
+        seed: "4",
+      },
+      team2: {
+        name: "Furman",
+        seed: "13",
+      },
+    },
+    {
+      team1: {
+        name: "Texas A&M",
+        seed: "6",
+      },
+      team2: {
+        name: "Providence",
+        seed: "11",
+      },
+    },
+    {
+      team1: {
+        name: "Kansas St",
+        seed: "3",
+      },
+      team2: {
+        name: "UC Santa Barbara",
+        seed: "14",
+      },
+    },
+    {
+      team1: {
+        name: "Creighton",
+        seed: "7",
+      },
+      team2: {
+        name: "Auburn",
+        seed: "10",
+      },
+    },
+    {
+      team1: {
+        name: "Gonzaga",
+        seed: "2",
+      },
+      team2: {
+        name: "Colgate",
+        seed: "15",
+      },
+    },
+  ],
+  playIn: [
+    {
+      team1: {
+        name: "Rutgers",
+        seed: "",
+      },
+      team2: {
+        name: "Arizona State",
+        seed: "",
+      },
+    },
+    {
+      team1: {
+        name: "Pittsburgh",
+        seed: "",
+      },
+      team2: {
+        name: "Nevada",
+        seed: "",
+      },
+    },
+    {
+      team1: {
+        name: "Howard",
+        seed: "",
+      },
+      team2: {
+        name: "SE Missouri",
+        seed: "",
+      },
+    },
+    {
+      team1: {
+        name: "Fairleigh Dickinson",
+        seed: "",
+      },
+      team2: {
+        name: "Texas Southern",
+        seed: "",
+      },
+    },
+  ],
+  firstFourOut: [
+    {
+      name: "Clemson",
+      seed: "",
+    },
+    {
+      name: "NC State",
+      seed: "",
+    },
+    {
+      name: "Oklahoma St",
+      seed: "",
+    },
+    {
+      name: "Vanderbilt",
+      seed: "",
+    },
+  ],
 }
