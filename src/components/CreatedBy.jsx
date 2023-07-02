@@ -25,7 +25,7 @@ export default function CreatedBy({ currentBracket }) {
         <div className="flex ml-4 mt-4 gap-4">
           <Image
             className="rounded-full cursor-pointer"
-            src={creator.image}
+            src={creator.image || "/images/loading.png"}
             alt="user image"
             width={40}
             height={40}
