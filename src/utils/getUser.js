@@ -1,7 +1,7 @@
 import { BASE_URL } from "./BASE_URL"
 
 export async function getUser(userId) {
-  const res = await fetch(`${BASE_URL}:3000/api/user`, {
+  const res = await fetch(`${BASE_URL}/api/user`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
