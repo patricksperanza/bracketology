@@ -21,7 +21,7 @@ export default function SubmitButton() {
       )
     }
   }, [newBracket])
-  console.log(newBracket)
+
   return (
     <button
       onClick={async () => {
@@ -33,7 +33,7 @@ export default function SubmitButton() {
           body: JSON.stringify(newBracket),
         })
         const data = await res.json()
-        console.log(data)
+
         setNewBracket(bracketTemplate)
         router.push("/")
       }}
