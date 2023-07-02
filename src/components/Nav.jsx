@@ -10,6 +10,7 @@ export default function Nav() {
   const { data: session } = useSession()
   const [displayBracketDropdown, setDisplayBracketDropdown] = useState(false)
   const [displayUserDropdown, setDisplayUserDropdown] = useState(false)
+  console.log(session)
 
   return (
     <nav>
