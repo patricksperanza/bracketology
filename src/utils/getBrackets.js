@@ -1,5 +1,7 @@
+import { BASE_URL } from "./BASE_URL"
+
 export async function getBrackets() {
-  const res = await fetch("http://localhost:3000/api/bracket", {
+  const res = await fetch(`${BASE_URL}/api/bracket`, {
     cache: "no-store",
   })
   if (!res.ok) {

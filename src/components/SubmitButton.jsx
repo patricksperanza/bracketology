@@ -3,6 +3,7 @@ import { bracketTemplate } from "@/data/bracket"
 import { useRouter } from "next/navigation"
 import { useSession } from "next-auth/react"
 import { produce } from "immer"
+import { BASE_URL } from "@/utils/BASE_URL"
 
 import { BracketContext } from "@/context/BracketContext"
 
@@ -24,7 +25,7 @@ export default function SubmitButton() {
   return (
     <button
       onClick={async () => {
-        const res = await fetch("http://localhost:3000/api/bracket/new", {
+        const res = await fetch(`${BASE_URL}/api/bracket/new`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -1,5 +1,7 @@
+import { BASE_URL } from "./BASE_URL"
+
 export async function getAllUsers(userId) {
-  const res = await fetch("http://localhost:3000/api/user", {
+  const res = await fetch(`${BASE_URL}/api/user`, {
     method: "GET",
     cache: "no-store",
   })
