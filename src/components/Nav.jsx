@@ -1,15 +1,15 @@
-"use client"
-import { signIn, signOut, useSession } from "next-auth/react"
-import Image from "next/image"
-import Link from "next/link"
-import BracketDropDown from "./BracketDropDown"
-import UserDropDown from "./UserDropDown"
-import { useState } from "react"
+"use client";
+import { signIn, signOut, useSession } from "next-auth/react";
+import Image from "next/image";
+import Link from "next/link";
+import BracketDropDown from "./BracketDropDown";
+import UserDropDown from "./UserDropDown";
+import { useState } from "react";
 
 export default function Nav() {
-  const { data: session } = useSession()
-  const [displayBracketDropdown, setDisplayBracketDropdown] = useState(false)
-  const [displayUserDropdown, setDisplayUserDropdown] = useState(false)
+  const { data: session } = useSession();
+  const [displayBracketDropdown, setDisplayBracketDropdown] = useState(false);
+  const [displayUserDropdown, setDisplayUserDropdown] = useState(false);
 
   return (
     <nav>
@@ -69,5 +69,5 @@ export default function Nav() {
         </ul>
       </div>
     </nav>
-  )
+  );
 }
